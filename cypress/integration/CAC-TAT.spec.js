@@ -1,5 +1,5 @@
 /// <reference types="Cypress">
-import '/home/rb-cesar/Documentos/cypress-basico-v2-main/cypress//support/commands.js'
+import '/home/rb-cesar/Documentos/CypressBasic/cypress//support/commands.js'
 
 describe('Central de Atendimento ao Cliente TAT', function() {
   beforeEach(function(){
@@ -76,7 +76,7 @@ describe('Central de Atendimento ao Cliente TAT', function() {
       cy.wrap($radio).check().should('be.checked')
     })
   })
-  it.only('marca ambos checkboxes, depois desmarca o último', function(){
+  it('marca ambos checkboxes, depois desmarca o último', function(){
     cy.get('input[type="checkbox"]')
       .check()
       .should('be.checked')
@@ -85,5 +85,9 @@ describe('Central de Atendimento ao Cliente TAT', function() {
       .should('not.be.checked')
     //cy.get('input[type="checkbox"][value="phone"]').uncheck()
     cy.get('input[type="checkbox"]')
+  })
+  it.only('seleciona um arquivo da pasta fixtures', function(){
+    cy.get('input[type="file"]#file-upload').selectFile('cypress/fixtures/example.json')
+   // .should('have')
   })
 })
