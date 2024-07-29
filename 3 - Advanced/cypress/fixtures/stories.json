@@ -1,0 +1,28 @@
+{
+  "hits": [
+    {
+      "title": "Angular",
+      "url": "https://angular.io/",
+      "author": "Aisko Hevery",
+      "num_comments": 2,
+      "points": 50,
+      "objectID": "0"
+    },
+    {
+      "title": "React",
+      "url": "https://reactjs.org/",
+      "author": "Bordan Walke",
+      "num_comments": 3,
+      "points": 80,
+      "objectID": "1"
+    },
+    {
+      "title": "Vue",
+      "url": "https://vuejs.org/",
+      "author": "Cvan You",
+      "num_comments": 4,
+      "points": 100,
+      "objectID": "2"
+    }
+  ]
+}
